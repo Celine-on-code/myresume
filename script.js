@@ -1,5 +1,5 @@
 /* ===== 1. 打字機標題 ===== */
-const text="Design that empowers.\nExperience that connects.",h1=document.getElementById("type"),content=h1.querySelector(".typewriter-content"),cur=h1.querySelector(".cur");
+const text="Design that empowers.\nExperience that connects.",h1=document.getElementById("type"),content=h1.querySelector(".typewriter-content");
 const showRest=()=>{document.getElementById("sub").classList.add("in");document.getElementById("cta").classList.add("in")};
 if(matchMedia("(prefers-reduced-motion: reduce)").matches){content.textContent=text;showRest()}
 else{let i=0;const node=document.createTextNode("");content.appendChild(node);(function t(){node.data=text.slice(0,++i);i<text.length?setTimeout(t,55):showRest()})()}
