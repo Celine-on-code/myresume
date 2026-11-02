@@ -2,7 +2,7 @@
 
 > 兼具簡約視覺設計與流暢互動體驗的個人履歷網頁，展示前端開發與設計作品。
 
-🔗 **線上預覽 (Live Demo)**: [點此查看我的線上履歷](https://你的github帳號.github.io/myresume/) *(若尚未部署可先留空或之後補上)*
+🔗 **線上預覽 (Live Demo)**: [點此查看我的線上履歷](https://celine-on-code.github.io/myresume/) 
 
 ---
 
