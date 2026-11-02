@@ -3,7 +3,7 @@
 以個人介紹、技能地圖、精選專案、工作經歷與專業認證，說明「我是誰、我會什麼，以及我想解決什麼問題」。
 
 - **線上網站**：[celine-on-code.github.io/myresume](https://celine-on-code.github.io/myresume/)
-- **主要聯絡方式**：[Email](mailto:linyufangs@gmail.com) · [LinkedIn](https://www.linkedin.com/in/linyufang/)
+
 
 ## 專案特色
 
