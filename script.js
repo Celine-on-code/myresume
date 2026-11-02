@@ -18,8 +18,9 @@ const links=[...document.querySelectorAll("nav a.l")];
 const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
 document.querySelectorAll("section[id]").forEach(s=>spy.observe(s));
 const menu=document.getElementById("menu"),bg=document.getElementById("burger");
+const closeMenu=()=>{menu.classList.remove("open");bg.setAttribute("aria-expanded","false")};
 bg.onclick=()=>{const o=menu.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
-menu.addEventListener("click",e=>{if(e.target.closest("a"))menu.classList.remove("open")});
+menu.addEventListener("click",e=>{if(e.target.closest("a"))closeMenu()});
 
 /* ===== 5. 粒子連線背景（分頁不可見時暫停）===== */
 (function(){

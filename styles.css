@@ -373,6 +373,15 @@ nav a.l.on {
   margin: 14px 0 0;
 }
 
+.eyebrow,
+.skill-step {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--b);
+  font: 700 12px/1.4 "Plus Jakarta Sans", "Noto Sans TC", sans-serif;
+  letter-spacing: .14em;
+}
+
 .card {
   background: linear-gradient(145deg, rgba(255, 255, 255, .96), rgba(250, 252, 255, .88));
   border: 1px solid var(--line);
@@ -399,6 +408,72 @@ nav a.l.on {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.project {
+  position: relative;
+  padding: 28px 24px;
+}
+
+.project-index {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  color: #c7d2fe;
+  font: 800 32px/1 "Plus Jakarta Sans", sans-serif;
+}
+
+.project-type {
+  display: block;
+  margin: 0 38px 12px 0;
+  color: var(--b);
+  font: 700 10px/1.5 "Plus Jakarta Sans", sans-serif;
+  letter-spacing: .1em;
+}
+
+.project h3 {
+  min-height: 2.5em;
+}
+
+.project p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.project p strong {
+  color: var(--ink);
+}
+
+.project .tags {
+  margin-top: 18px;
+}
+
+.project .tags li {
+  padding: 3px 10px;
+  font-size: 12px;
+}
+
+.project-link {
+  margin: 28px 0 0;
+  text-align: center;
+}
+
+.project-link a {
+  color: var(--bt);
+  font-weight: 700;
+}
+
+.project-link a:hover {
+  color: var(--b);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .tags {
@@ -578,9 +653,24 @@ nav a.l.on {
 .links {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 22px;
   margin-top: 26px;
   color: var(--mute);
+}
+
+.contact-link {
+  display: grid;
+  gap: 2px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.contact-link span {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .links a:hover {
@@ -613,8 +703,13 @@ footer {
 
 @media (max-width: 860px) {
   .g2,
-  .g3 {
+  .g3,
+  .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project h3 {
+    min-height: 0;
   }
 
   .stats {
