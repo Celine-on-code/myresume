@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>林育芳 Celine｜ UI/UX Designer</title>
+<meta name="description" content="林育芳（Celine）擁有 4 年以上經驗的 UI/UX 設計師，從使用者需求出發，把設計落實成流暢的網頁介面與程式架構。">
+<meta property="og:title" content="林育芳 Celine｜UI/UX Designer ">
+<meta property="og:description" content="Design that empowers. Experience that connects.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas><div class="page-grid" aria-hidden="true"></div><div class="orb o1" aria-hidden="true"></div><div class="orb o2" aria-hidden="true"></div>
+
+<!-- ===== Navbar ===== -->
+<header>
+ <div class="wrap bar">
+  <a class="logo" href="#home" aria-label="回到首頁">Celine<i> Lin</i></a>
+  <button class="burger" id="burger" aria-label="開啟選單" aria-expanded="false">☰</button>
+  <nav aria-label="主選單"><ul id="menu">
+   <li><a class="l" href="#about">關於我</a></li>
+   <li><a class="l" href="#experience">工作經歷</a></li>
+   <li><a class="l" href="#services">服務項目</a></li>
+   <li><a class="l" href="#certs">專業認證</a></li>
+  </ul></nav>
+ </div>
+</header>
+
+<main>
+<!-- ===== Hero ===== -->
+<section id="home" class="relative isolate overflow-hidden bg-slate-50 text-slate-950">
+ <div class="studio-grid pointer-events-none absolute inset-0" aria-hidden="true"></div>
+ <div class="studio-glow pointer-events-none absolute -right-48 -top-56 h-[36rem] w-[36rem] rounded-full blur-3xl" aria-hidden="true"></div>
+ <div class="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 px-6 py-20 sm:px-8 sm:py-24 lg:min-h-[calc(100svh-68px)] lg:grid-cols-2 lg:gap-12 lg:px-10 lg:py-16">
+  <div class="max-w-2xl">
+   <span class="inline-flex items-center gap-2 rounded-full border border-slate-200/90 bg-white/80 px-3.5 py-1.5 text-xs font-semibold tracking-[0.12em] text-slate-600 shadow-sm shadow-slate-900/[0.03] backdrop-blur">
+    <span class="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-blue-600 to-violet-500"></span>
+    CELINE LIN <span class="text-slate-300">/</span> DIGITAL DESIGNER
+   </span>
+   <h1 id="type" class="mt-8 grid max-w-3xl whitespace-pre-line text-5xl font-extrabold leading-[1.04] tracking-[-0.06em] text-slate-950 sm:text-6xl xl:text-[4.35rem]" aria-label="Design that empowers. Experience that connects."><span class="typewriter-layout" aria-hidden="true">Design that empowers.
+Experience that connects.</span><span class="typewriter-text" aria-hidden="true"><span class="typewriter-content"></span><span class="cur"></span></span></h1>
+   <p id="sub" class="mt-7 max-w-xl text-base leading-8 text-slate-600 sm:text-lg">我是林育芳，結合 UI/UX 設計與前端開發，從策略與介面到互動實作，打造細節到位、真正好用的數位體驗。</p>
+   <div class="cta mt-9 flex flex-wrap items-center gap-4" id="cta">
+    <a class="group inline-flex min-h-14 items-center gap-3 rounded-xl bg-gradient-to-r from-blue-700 to-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20 transition duration-200 hover:-translate-y-0.5 hover:from-blue-800 hover:to-indigo-700 hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-500" href="https://calendar.app.google/JpdfXkSWo4kVeczTA" target="_blank" rel="noopener">
+     預約諮詢
+    </a>
+    <a class="group inline-flex min-h-14 items-center gap-2 rounded-xl px-4 py-3.5 text-sm font-semibold text-slate-600 transition hover:text-slate-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-500" href="https://www.behance.net/yufangdesign" target="_blank" rel="noopener noreferrer">
+     查看作品集
+    </a>
+   </div>
+   <div class="mt-12 flex items-center gap-4 border-t border-slate-200/80 pt-5 text-xs font-medium tracking-wide text-slate-500">
+    <span class="inline-flex -space-x-2">
+     <span class="grid h-8 w-8 place-items-center rounded-full border-2 border-slate-50 bg-slate-900 text-[10px] font-bold text-white">UI</span>
+     <span class="grid h-8 w-8 place-items-center rounded-full border-2 border-slate-50 bg-indigo-100 text-[10px] font-bold text-indigo-700">UX</span>
+     <span class="grid h-8 w-8 place-items-center rounded-full border-2 border-slate-50 bg-sky-100 text-[10px] font-bold text-sky-700">&lt;/&gt;</span>
+    </span>
+    DESIGN THINKING <span class="text-slate-300">+</span> FRONT-END CRAFT
+   </div>
+  </div>
+
+  <div class="relative mx-auto w-full max-w-xl lg:ml-auto" aria-hidden="true">
+   <div class="absolute -inset-8 rounded-[2.5rem] bg-gradient-to-br from-blue-200/50 via-indigo-100/40 to-violet-200/50 blur-3xl"></div>
+   <div class="absolute -right-5 top-16 h-40 w-40 rounded-full bg-violet-300/30 blur-3xl"></div>
+   <div class="relative z-10 rounded-[1.75rem] border border-white/80 bg-white/80 p-4 shadow-[0_36px_100px_-42px_rgba(15,23,42,0.35)] backdrop-blur-2xl sm:p-6">
+    <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+     <div class="flex items-center gap-2.5">
+      <span class="flex gap-1.5"><i class="h-2 w-2 rounded-full bg-slate-200"></i><i class="h-2 w-2 rounded-full bg-slate-200"></i><i class="h-2 w-2 rounded-full bg-slate-200"></i></span>
+      <span class="text-[10px] font-bold tracking-[0.16em] text-slate-400">STUDIO / PREVIEW</span>
+     </div>
+     <span class="inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-2.5 py-1 text-[10px] font-semibold tracking-wide text-blue-700">
+      <span class="h-1.5 w-1.5 rounded-full bg-blue-500"></span> AVAILABLE FOR PROJECTS
+     </span>
+    </div>
+
+    <div class="relative mt-5 overflow-hidden rounded-2xl border border-indigo-100/80 bg-gradient-to-br from-blue-50 via-indigo-50 to-violet-100 p-6 text-slate-900 sm:p-8">
+     <div class="absolute -right-10 -top-20 h-64 w-64 rounded-full bg-blue-300/40 blur-3xl"></div>
+     <div class="absolute -bottom-28 right-24 h-56 w-56 rounded-full bg-violet-300/40 blur-3xl"></div>
+     <div class="relative">
+      <div class="flex items-center justify-between">
+       <span class="text-[10px] font-semibold tracking-[0.2em] text-indigo-600">SELECTED WORK / 2026</span>
+       <span class="grid h-9 w-9 place-items-center rounded-xl border border-white/80 bg-white/70 shadow-sm">
+        <svg class="h-4 w-4 text-indigo-500" viewBox="0 0 24 24" fill="none"><path d="M12 3 14.5 9.5 21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+       </span>
+      </div>
+      <div class="mt-10 max-w-xs">
+       <p class="text-xs font-medium text-slate-500">DIGITAL PRODUCT EXPERIENCE</p>
+       <h2 class="mt-2 text-2xl font-semibold leading-tight tracking-[-0.04em] sm:text-3xl">Thoughtful by design.<br>Precise by nature.</h2>
+      </div>
+      <div class="mt-8 flex items-end justify-between gap-6">
+       <div class="flex items-center gap-2 text-[10px] font-medium tracking-wide text-indigo-700">
+        <span class="rounded-md border border-white/80 bg-white/70 px-2.5 py-1.5">STRATEGY</span>
+        <span class="text-indigo-300">/</span>
+        <span class="rounded-md border border-white/80 bg-white/70 px-2.5 py-1.5">DESIGN</span>
+        <span class="text-indigo-300">/</span>
+        <span class="rounded-md border border-white/80 bg-white/70 px-2.5 py-1.5">BUILD</span>
+       </div>
+       <span class="hidden text-[10px] font-semibold tracking-[0.16em] text-indigo-500 sm:inline">01 — 03</span>
+      </div>
+     </div>
+    </div>
+
+    <div class="mt-5 grid grid-cols-2 gap-3">
+     <div class="rounded-2xl border border-slate-100 bg-white p-4 sm:p-5">
+      <div class="flex items-center justify-between">
+       <span class="text-[11px] font-semibold text-slate-500">Design system</span>
+       <span class="text-[10px] font-medium text-slate-400">IN PROGRESS</span>
+      </div>
+      <div class="mt-4 h-1.5 overflow-hidden rounded-full bg-slate-100">
+       <div class="h-full w-[78%] rounded-full bg-gradient-to-r from-blue-600 to-violet-500"></div>
+      </div>
+      <div class="mt-3 flex items-center justify-between text-[10px] font-medium text-slate-400">
+       <span>Type</span><span>Color</span><span>Components</span>
+      </div>
+     </div>
+     <div class="rounded-2xl border border-slate-100 bg-white p-4 sm:p-5">
+      <span class="text-[11px] font-semibold text-slate-500">One connected workflow</span>
+      <div class="mt-3 flex items-center gap-2">
+       <span class="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-blue-600 to-indigo-500 text-white shadow-md shadow-indigo-500/20">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4h13A1.5 1.5 0 0 1 20 5.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 14.5v-9ZM8 20h8m-4-4v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+       </span>
+       <span class="text-slate-300">→</span>
+       <span class="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-violet-500 to-indigo-500 text-white shadow-md shadow-violet-500/20">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M8 4 4 12l4 8m8-16 4 8-4 8m-3-18-2 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+       </span>
+       <span class="ml-auto text-[9px] font-semibold leading-4 tracking-[0.12em] text-slate-400">DESIGN<br>TO CODE</span>
+      </div>
+      <div class="mt-3 h-1.5 overflow-hidden rounded-full bg-slate-100">
+       <div class="h-full w-[90%] rounded-full bg-gradient-to-r from-violet-500 to-indigo-400"></div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <div class="absolute -left-5 top-24 z-20 hidden items-center gap-3 rounded-2xl border border-white/80 bg-white/90 p-3.5 shadow-xl shadow-slate-900/10 backdrop-blur-xl sm:flex xl:-left-12">
+    <span class="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-blue-600 to-violet-500 text-sm font-bold text-white">4+</span>
+    <span><span class="block text-xs font-semibold text-slate-800">Years of craft</span><span class="mt-0.5 block text-[10px] text-slate-500">DESIGN × DEVELOPMENT</span></span>
+   </div>
+   <div class="absolute -bottom-6 right-5 z-20 hidden items-center gap-2.5 rounded-2xl border border-white/80 bg-white/90 px-4 py-3 shadow-xl shadow-slate-900/10 backdrop-blur-xl sm:flex">
+    <span class="grid h-8 w-8 place-items-center rounded-full bg-indigo-50 text-indigo-600">
+     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+    <span class="text-xs font-semibold text-slate-700">Made with intention</span>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- ===== 數據 ===== -->
+<div class="wrap rv"><div class="stats">
+ <div class="stat"><b><span class="n" data-n="4">0</span>+</b><span>年專業工作經驗</span></div>
+ <div class="stat"><b><span class="n" data-n="42">0</span></b><span>間分店的全台視覺整合</span></div>
+ <div class="stat"><b><span class="n" data-n="150">0</span>+</b><span>種線上與線下設計物</span></div>
+</div></div>
+
+<!-- ===== 關於我 ===== -->
+<section id="about"><div class="wrap">
+ <div class="hd rv"><h2>設計與程式，一起把體驗做完整</h2><p>我同時掌握介面設計與前端開發。畫面怎麼呈現、元件怎麼組成、互動怎麼運作，都可以在同一條流程裡完成，減少設計稿與實作之間的落差。</p></div>
+ <div class="g3">
+  <div class="card rv"><h3>前端工程開發</h3><ul class="tags"><li>網頁與介面應用實作</li><li>互動與動態效果實現</li><li>響應式版面切版</li><li>元件化架構設計</li></ul></div>
+  <div class="card rv"><h3>使用者介面設計</h3><ul class="tags"><li>應用程式／網頁介面設計</li><li>視覺稿設計</li><li>原型設計</li><li>介面元件設計</li><li>互動設計</li></ul></div>
+  <div class="card rv"><h3>軟體技能</h3><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Linux / Ubuntu</li><li>VS Code</li><li>Figma</li><li>Illustrator</li><li>Photoshop</li></ul></div>
+ </div>
+</div></section>
+
+<!-- ===== 工作經歷 ===== -->
+<section id="experience" class="alt"><div class="wrap">
+ <div class="hd rv"><h2>工作經歷</h2><p>從品牌視覺、空間指標到數位產品，累積 4 年以上的跨領域實戰。</p></div>
+ <div class="tl">
+  <article class="card rv"><span class="when">2025.11 – 2026.08｜9 個月</span><h3>UX/UI Designer｜UXI DESIGN 遊石設計</h3>
+   <p>國際安防品牌 官網改版設計、國際運動裝置品牌 高互動智慧錶面設計。</p>
+   <ul><li>跨平台 UI/UX 資訊架構優化與高保真原型建置。</li><li>介面設計與專案管理，深度溝通客戶需求，精準追蹤跨團隊測試驗收與細節。</li></ul></article>
+  <article class="card rv"><span class="when">2022.12 – 2024.01｜1 年 2 個月</span><h3>指標設計部 專員｜惠明股份有限公司</h3>
+   <p>負責臺灣國立醫院新建大樓的指標設計。</p>
+   <ul><li>依空間需求制定標誌系統規範、中英文比例及應用、色彩計畫與符碼繪製。</li><li>規劃、設計並製作戶外全區配置圖、室內引導標示、樓層簡介、逃生平面圖等超過 25 種空間標誌。</li><li>與客戶溝通設計需求，進行專業分析與提案。</li></ul></article>
+  <article class="card rv"><span class="when">2021.02 – 2022.12｜1 年 11 個月</span><h3>設計部 專員｜馬辣餐飲集團</h3>
+   <p>設計全集團 9 大品牌、全台 42 間分店廣告展示物，任職期間創下 Google 熱門搜尋量最高峰。</p>
+   <ul><li>製作超過 20 項平面與視覺設計種類，設計多達 150 種線上（點餐系統、電子看板、社群行銷圖）與線下（燈箱、大型看板、海報、菜單）露出物。</li><li>掌握市場設計趨勢，制定並更新品牌設計規範。</li><li>與印刷廠商密切合作，確保輸出品質；管理專案進度，準時完成交件。</li></ul></article>
+ </div>
+</div></section>
+
+<!-- ===== 服務項目 ===== -->
+<section id="services"><div class="wrap">
+ <div class="hd rv"><h2>我能幫你做什麼</h2><p>從設計到上線，我可以負責其中一段，也可以把整段流程接起來。</p></div>
+ <div class="g3">
+  <div class="card rv"><h3>介面與原型設計</h3><p>用 Figma 建立從線框圖到高保真原型的完整互動體驗，包含 App 與網頁的介面元件、資訊架構與視覺稿。</p></div>
+  <div class="card rv"><h3>前端實作</h3><p>以 HTML、CSS、JavaScript 與 React 把設計稿做成可用的網頁：響應式版面、元件化架構、順暢的互動與動態效果。</p></div>
+  <div class="card rv"><h3>品牌與視覺落地</h3><p>建立並維護一致的品牌視覺與設計規範，從線上系統、電子看板到印刷廣宣物與空間指標，都能管控進度與品質。</p></div>
+ </div>
+ <div class="rv" style="margin-top:34px"><a class="btn" href="https://calendar.app.google/JpdfXkSWo4kVeczTA" target="_blank" rel="noopener"><span class="t1">預約諮詢</span><span class="t2">預約諮詢</span></a></div>
+</div></section>
+
+<!-- ===== 專業認證 ===== -->
+<section id="certs"><div class="wrap">
+ <div class="hd rv"><h2>持續學習 AI 與前端技術</h2><p>我把新工具放進工作流程，讓設計與開發更有效率。</p></div>
+ <div class="g3" id="certList"></div>
+</div></section>
+
+<!-- ===== 聯絡 ===== -->
+<section id="contact" class="alt"><div class="wrap"><div class="card contact rv">
+ <h2>有想法想聊聊？</h2>
+ <p>告訴我你的產品或網站遇到什麼問題。我們可以先用一場線上諮詢釐清方向。</p>
+ <a class="btn" href="https://calendar.app.google/JpdfXkSWo4kVeczTA" target="_blank" rel="noopener"><span class="t1">預約諮詢</span><span class="t2">Status: Ready to Connect</span></a>
+ <div class="links">
+  <a href="https://github.com/Celine-on-code" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+   <svg class="h-8 w-8" viewBox="-1 -1 26 26" fill="currentColor" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 .1.76 2.03 3.78 1.44.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.51 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.15a10.62 10.62 0 0 1 5.55 0c2.11-1.45 3.04-1.15 3.04-1.15.61 1.54.23 2.68.12 2.96.71.78 1.14 1.78 1.14 3.01 0 4.28-2.61 5.22-5.1 5.5.4.35.75 1.02.75 2.06v3.04c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+  </a>
+  <a href="https://www.behance.net/yufangdesign" target="_blank" rel="noopener" aria-label="Behance" title="Behance">
+   <svg class="h-8 w-8" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#172554"/><text x="16" y="16" fill="#fff" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="-1.2" text-anchor="middle" dominant-baseline="central">Bē</text></svg>
+  </a>
+ </div>
+</div></div></section>
+</main>
+<footer>© 2026 林育芳 Celine. All rights reserved.</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
